@@ -33,7 +33,8 @@ var marvelUniverse = [{
     firstAppearance: "Tales of Suspense #3",
     mostPopularComic: "Iron Man: Extremis",
     whereToBegin: "Iron Man: Season One"
-  } {
+  },
+  {
     title: "Thor",
     year: "2011",
     universe: "Marvel Cinematic Universe",
@@ -416,5 +417,5 @@ var marvelUniverse = [{
     firstAppearance: "X-Men (1963) #1",
     mostPopularComic: "Astonishing X-Men",
     whereToBegin: "X-Men: Season One"
-  },
+  }
 ];
