@@ -86,7 +86,7 @@ var marvelUniverse = [
     mostPopularComic: "New Avengers By Brian Michael Bendis",
     whereToBegin: "Avengers: The Origin",
     imageAppearance: "assets/img/mcu-comic-covers/Avengers_Vol_1_1.jpg",
-    imagePopularComic: "assets/img/mcu-comic-covers/Avengers_The_Enemy_Within_Vol_1_1.jpg",
+    imagePopularComic: "assets/img/mcu-comic-covers/New_Avengers_Vol_1_1.jpg",
     imageToBegin: "assets/img/mcu-comic-covers/Avengers_The_Origin_Vol_1_1.jpg"
   },
   {
@@ -161,7 +161,7 @@ var marvelUniverse = [
     mostPopularComic: "New Avengers By Brian Michael Bendis",
     whereToBegin: "Avengers: The Origin",
     imageAppearance: "assets/img/mcu-comic-covers/Avengers_Vol_1_1.jpg",
-    imagePopularComic: "assets/img/mcu-comic-covers/Avengers_The_Enemy_Within_Vol_1_1.jpg",
+    imagePopularComic: "assets/img/mcu-comic-covers/New_Avengers_Vol_1_1.jpg",
     imageToBegin: "assets/img/mcu-comic-covers/Avengers_The_Origin_Vol_1_1.jpg"
   },
   {
@@ -281,7 +281,7 @@ var marvelUniverse = [
     mostPopularComic: "New Avengers By Brian Michael Bendis",
     whereToBegin: "Avengers: The Origin",
     imageAppearance: "assets/img/mcu-comic-covers/Avengers_Vol_1_1.jpg",
-    imagePopularComic: "assets/img/mcu-comic-covers/Avengers_The_Enemy_Within_Vol_1_1.jpg",
+    imagePopularComic: "assets/img/mcu-comic-covers/New_Avengers_Vol_1_1.jpg",
     imageToBegin: "assets/img/mcu-comic-covers/Avengers_The_Origin_Vol_1_1.jpg"
   },
   {
@@ -326,7 +326,7 @@ var marvelUniverse = [
     mostPopularComic: "New Avengers By Brian Michael Bendis",
     whereToBegin: "Avengers: The Origin",
     imageAppearance: "assets/img/mcu-comic-covers/Avengers_Vol_1_1.jpg",
-    imagePopularComic: "assets/img/mcu-comic-covers/Avengers_The_Enemy_Within_Vol_1_1.jpg",
+    imagePopularComic: "assets/img/mcu-comic-covers/New_Avengers_Vol_1_1.jpg",
     imageToBegin: "assets/img/mcu-comic-covers/Avengers_The_Origin_Vol_1_1.jpg"
   },
   {
