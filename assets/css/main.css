@@ -110,5 +110,24 @@ input.form-control.form-control-sm::-moz-placeholder {
 }
 
 .img-comic {
+  height: 150px;
+  width: 100px;
+}
+
+#comics-info a {
+  color: #f0141e;
+}
+
+.description-comic {
+  display: block;
+}
+
+#comics-info .col-md-4 {
   height: 200px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  text-align: center;
+  line-height: 1.3;
 }
