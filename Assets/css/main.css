@@ -38,6 +38,7 @@ h1{
 	height:400px;
 	background-repeat: no-repeat;
 }
+<<<<<<< Updated upstream
 =======
 .navbar-inverse{
   background-color:#A52E2F;
@@ -74,4 +75,30 @@ h1{
 .panel-collapse div.list-group div.list-group{margin: 0;}
 .panel-collapse div.list-group .list-group a.list-group-item {border-top: 1px solid #ddd;border-bottom: 0;padding-left: 30px;}
 
+>>>>>>> Stashed changes
+=======
+
+
+
+
+.gl-star-rating[data-star-rating] .gl-star-rating-stars {
+    display: inline-block;
+    height: 26px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.gl-star-rating[data-star-rating] .gl-star-rating-text {
+    display: inline-block;
+    position: relative;
+    height: 26px;
+    line-height: 26px;
+    font-size: 0.8em;
+    font-weight: 600;
+    color: #fff;
+    background-color: #1a1a1a;
+    white-space: nowrap;
+    vertical-align: middle;
+    padding: 0 12px 0 6px;
+    margin: 0 0 0 12px;
+    }
 >>>>>>> Stashed changes

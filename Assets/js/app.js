@@ -6,6 +6,7 @@ $('carousel').carousel({
   interval:1000,
   pause:"hover"
 })
+<<<<<<< Updated upstream
 =======
 $(document).ready(function () {
   var trigger = $('.hamburger'),
@@ -35,4 +36,20 @@ $(document).ready(function () {
         $('#wrapper').toggleClass('toggled');
   });  
 });
+>>>>>>> Stashed changes
+=======
+
+
+/* star ratings */
+
+
+// Using vanilla javascript:
+StarRating.defaults.initialText = "Rate me";
+clickFn: function (select) {
+  console.log('I Clicked star #' + selected);
+  $( '#star-rating-2' ).starrating({;
+}
+
+});
+
 >>>>>>> Stashed changes
