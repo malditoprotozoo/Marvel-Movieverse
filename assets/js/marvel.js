@@ -175,7 +175,7 @@ var marvelUniverse = [
     firstAppearance: "Tales to Astonish #27",
     mostPopularComic: "Ant-man: Second-chance Man",
     whereToBegin: "Ant-man: Season One",
-    imageAppearance: "assets/img/mcu-comic-covers/Tales_to_Astonish_Vol_1_27.jpg",
+    imageAppearance: "assets/img/mcu-comic-covers/Tales_to_Astonish_Vol_1_27.png",
     imagePopularComic: "assets/img/mcu-comic-covers/Ant-Man_Vol_2_1_Second_Chance.jpg",
     imageToBegin: "assets/img/mcu-comic-covers/Ant-Man_Vol_2_1_Second_Chance.jpg"
   },
@@ -295,7 +295,7 @@ var marvelUniverse = [
     firstAppearance: "Tales to Astonish #27",
     mostPopularComic: "Ant-man: Second-chance Man",
     whereToBegin: "Ant-man: Season One",
-    imageAppearance: "assets/img/mcu-comic-covers/Tales_to_Astonish_Vol_1_27.jpg",
+    imageAppearance: "assets/img/mcu-comic-covers/Tales_to_Astonish_Vol_1_27.png",
     imagePopularComic: "assets/img/mcu-comic-covers/Ant-Man_Vol_2_1_Second_Chance.jpg",
     imageToBegin: "assets/img/mcu-comic-covers/Ant-Man_Vol_2_1_Second_Chance.jpg"
   },
