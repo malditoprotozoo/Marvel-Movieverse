@@ -11,3 +11,29 @@ body {
   background-repeat: no-repeat;
 }
 
+/* Carrousel  */
+
+h1{
+	color: white;
+}
+
+/* carousel container */
+
+#img1 {
+	background-image: url(../img/Estreno1.jpg);
+	height:400px;
+	background-repeat: no-repeat;
+	
+}
+
+#img2 {
+	background-image: url(../img/Estreno2.jpg);
+	height:400px;
+	background-repeat: no-repeat;
+}
+
+#img3 {
+	background-image: url(../img/Estreno3.jpg);
+	height:400px;
+	background-repeat: no-repeat;
+}
