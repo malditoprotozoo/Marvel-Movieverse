@@ -42,6 +42,7 @@
     <div class="container-fluid" id="main-container">
       <div class="row">
         <div class="col-12 col-md-3" id="sidebar">
+
         </div>
         <div class="col-12 col-md-9" id="movies-container">
           <div id="movies">
@@ -50,7 +51,66 @@
         </div>
       </div>
     </div>
-    <!-- Trailers -->
+    <!-- Modal -->
+    <div class="modal fade bd-example-modal-lg" id="modal">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <!-- Titulo Modal -->
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal-title"></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <!-- Contenido Modal -->
+          <div class="modal-body">
+            <div class="container-fluid">
+              <!-- Primera Row POSTER + TRAILER-->
+              <div class="row">
+                <div class="col-md-4">
+                  <div id="poster">
+                    <!-- AQUÍ VA EL POSTER DE LA PELICULA AGREGADO DESDE JQUERY-->
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <div id="trailer">
+                    <!-- AQUÍ VA EL TRAILER DE LA PELICULA AGREGADO DESDE JQUERY-->
+                  </div>
+                </div>
+              </div>
+              <!-- Segunda Row INFORMACION-->
+              <div class="row">
+                <div class="col-md-12">
+                  <div id="info">
+                    <!-- AQUÍ VA INFORMACION DE LA PELICULA AGREGADO DESDE JQUERY-->
+                  </div>
+                </div>
+              </div>
+              <!-- Tercera Row COMICS -->
+              <div class="row">
+                <!-- COMIC FIRST APPEARANCE (4 columnas) -->
+                <div class="col-md-4">
+                  <div id="first-appearance">
+                    <!-- AQUÍ VA IMAGEN DEL COMIC FIRST APPEARANCE AGREGADO DESDE JQUERY-->
+                  </div>
+                </div>
+                <!-- COMIC MOST POPULAR (4 columnas) -->
+                <div class="col-md-4">
+                  <div id="most-popular">
+                    <!-- AQUÍ VA IMAGEN DEL COMIC MOST POPULAR AGREGADO DESDE JQUERY-->
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div id="where-to-begin">
+                    <!-- AQUÍ VA IMAGEN DEl COMIC WHERE TO BEGIN AGREGADO DESDE JQUERY-->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     
     <script src="assets/js/jquery-3.2.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>

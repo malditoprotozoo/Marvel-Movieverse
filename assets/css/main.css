@@ -107,3 +107,7 @@ input.form-control.form-control-sm::-moz-placeholder {
 .content h2 {
   font-size: 1em;
 }
+
+.img-comic {
+  height: 200px;
+}
