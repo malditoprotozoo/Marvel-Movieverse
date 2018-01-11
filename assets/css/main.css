@@ -98,6 +98,7 @@ input.form-control.form-control-sm::-moz-placeholder {
   width: 200px;
   margin: 2em;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .content img {
