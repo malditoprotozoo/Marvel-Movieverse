@@ -49,18 +49,13 @@ var postInfo = (function(arr) {
     var postThis = `<div class="content">`+`<h2>`+ arr[i].title + `</h2><img src="` + arr[i].newPoster + `" alt="` + arr[i].title + `"></div>`;
       $(postThis).appendTo("#movies").css("display", "none");
   }
-  // for (var key in obj) {
-  //   var data = `<div class="content">`+`<h2>`+key+`</h2><img src="`+obj[key]+`" alt="`+key+`"></div>`;
-  //   $(data).appendTo("#div-movies").css("display", "none");
-  // }
-  // setTimeout(function() {
-  //   linkGenerator(".content");
-  //   showInfo();
-  // }, 2000);
+  setTimeout(function() {
+    showInfo();
+  }, 2000);
 });
 
 var showInfo = (function() {
-  $(".content").slideDown("slow");
+  $(".content").slideDown("fast");
 });
 
 var linkGenerator = (function(toApply) {
