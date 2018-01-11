@@ -72,8 +72,10 @@ input.form-control.form-control-sm::-moz-placeholder {
 }
 
 #movies {
+  height: 50vh;
   padding: 1em;
   background-color: white;
+  overflow: auto;
 }
 
 .col-12 {
@@ -83,9 +85,12 @@ input.form-control.form-control-sm::-moz-placeholder {
 
 .content {
   display: inline-block;
+  text-align: center;
+  width: 200px;
+  margin: 2em;
+  overflow: hidden;
 }
 
 .content img {
-  width: 300px;
-  height: 450px;
+  height: 300px;
 }
