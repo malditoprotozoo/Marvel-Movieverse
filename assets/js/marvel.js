@@ -2,6 +2,7 @@ var marvelUniverse = [
   {
     title: "Iron Man",
     year: "2008",
+    protagonist: "Iron Man",
     universe: "Marvel Cinematic Universe",
     orderToWatch: "1",
     newPoster: "assets/img/poster-cinematic/iron-man.jpg",
@@ -17,6 +18,7 @@ var marvelUniverse = [
   {
     title: "The Incredible Hulk",
     year: "2008",
+    protagonist: "Hulk",
     universe: "Marvel Cinematic Universe",
     orderToWatch: "2",
     newPoster: "assets/img/poster-cinematic/the-incredible-hulk.jpg",
@@ -32,6 +34,7 @@ var marvelUniverse = [
   {
     title: "Iron Man 2",
     year: "2010",
+    protagonist: "Iron Man",
     universe: "Marvel Cinematic Universe",
     orderToWatch: "3",
     newPoster: "assets/img/poster-cinematic/iron-man-2.jpg",
@@ -47,6 +50,7 @@ var marvelUniverse = [
   {
     title: "Thor",
     year: "2011",
+    protagonist: "Thor",
     universe: "Marvel Cinematic Universe",
     orderToWatch: "4",
     newPoster: "assets/img/poster-cinematic/thor.jpg",
@@ -62,6 +66,7 @@ var marvelUniverse = [
   {
     title: "Captain America: The First Avenger",
     year: "2011",
+    protagonist: "Captain America",
     universe: "Marvel Cinematic Universe",
     orderToWatch: "5",
     newPoster: "assets/img/poster-cinematic/captain-america-the-first-avenger.jpg",
@@ -77,6 +82,7 @@ var marvelUniverse = [
   {
     title: "The Avengers",
     year: "2012",
+    protagonist: "the Avengers",
     universe: "Marvel Cinematic Universe",
     orderToWatch: "6",
     newPoster: "assets/img/poster-cinematic/marvel-the-avengers.jpg",
@@ -92,6 +98,7 @@ var marvelUniverse = [
   {
     title: "Iron Man 3",
     year: "2013",
+    protagonist: "Iron Man",
     universe: "Marvel Cinematic Universe",
     orderToWatch: "7",
     newPoster: "assets/img/poster-cinematic/iron-man-3.jpg",
@@ -107,6 +114,7 @@ var marvelUniverse = [
   {
     title: "Thor: The Dark World",
     year: "2013",
+    protagonist: "Thor",
     universe: "Marvel Cinematic Universe",
     orderToWatch: "8",
     newPoster: "assets/img/poster-cinematic/thor-the-dark-world.jpg",
@@ -122,6 +130,7 @@ var marvelUniverse = [
   {
     title: "Captain America: The Winter Soldier",
     year: "2014",
+    protagonist: "Captain America",
     universe: "Marvel Cinematic Universe",
     orderToWatch: "9",
     newPoster: "assets/img/poster-cinematic/captain-america-the-winter-soldier.jpg",
@@ -137,6 +146,7 @@ var marvelUniverse = [
   {
     title: "Guardians of the Galaxy",
     year: "2014",
+    protagonist: "the Guardians of the Galaxy",
     universe: "Marvel Cinematic Universe",
     orderToWatch: "10",
     newPoster: "assets/img/poster-cinematic/guardians-of-the-galaxy.jpg",
@@ -152,6 +162,7 @@ var marvelUniverse = [
   {
     title: "Avengers: Age of Ultron",
     year: "2015",
+    protagonist: "the Avengers",
     universe: "Marvel Cinematic Universe",
     orderToWatch: "11",
     newPoster: "assets/img/poster-cinematic/avengers-age-of-ultron.jpg",
@@ -167,6 +178,7 @@ var marvelUniverse = [
   {
     title: "Ant-Man",
     year: "2015",
+    protagonist: "Ant-Man",
     universe: "Marvel Cinematic Universe",
     orderToWatch: "12",
     newPoster: "assets/img/poster-cinematic/ant-man.jpg",
@@ -182,6 +194,7 @@ var marvelUniverse = [
   {
     title: "Captain America: Civil War",
     year: "2016",
+    protagonist: "Captain America",
     universe: "Marvel Cinematic Universe",
     orderToWatch: "13",
     newPoster: "assets/img/poster-cinematic/captain-america-civil-war.jpg",
@@ -197,6 +210,7 @@ var marvelUniverse = [
   {
     title: "Doctor Strange",
     year: "2016",
+    protagonist: "Doctor Strange",
     universe: "Marvel Cinematic Universe",
     orderToWatch: "14",
     newPoster: "assets/img/poster-cinematic/doctor-strange.jpg",
@@ -212,6 +226,7 @@ var marvelUniverse = [
   {
     title: "Guardians of the Galaxy Vol. 2",
     year: "2017",
+    protagonist: "the Guardians of the Galaxy",
     universe: "Marvel Cinematic Universe",
     orderToWatch: "15",
     newPoster: "assets/img/poster-cinematic/guardians-of-the-galaxy-vol2.jpg",
@@ -227,6 +242,7 @@ var marvelUniverse = [
   {
     title: "Spider-Man: Homecoming",
     year: "2017",
+    protagonist: "Spider-Man",
     universe: "Marvel Cinematic Universe",
     orderToWatch: "16",
     newPoster: "assets/img/poster-cinematic/spiderman-homecoming.jpg",
@@ -242,6 +258,7 @@ var marvelUniverse = [
   {
     title: "Thor: Ragnarok",
     year: "2017",
+    protagonist: "Thor",
     universe: "Marvel Cinematic Universe",
     orderToWatch: "17",
     newPoster: "assets/img/poster-cinematic/thor-ragnarok.jpg",
@@ -257,6 +274,7 @@ var marvelUniverse = [
   {
     title: "Black Panther",
     year: "2018",
+    protagonist: "Black Panther",
     universe: "Marvel Cinematic Universe",
     orderToWatch: "18",
     newPoster: "assets/img/poster-cinematic/black-panther.jpg",
@@ -272,6 +290,7 @@ var marvelUniverse = [
   {
     title: "Avengers: Infinity War",
     year: "2018",
+    protagonist: "the Avengers",
     universe: "Marvel Cinematic Universe",
     orderToWatch: "19",
     newPoster: "assets/img/poster-cinematic/avengers-infinity-war.jpg",
@@ -287,6 +306,7 @@ var marvelUniverse = [
   {
     title: "Ant-Man and the Wasp",
     year: "2018",
+    protagonist: "Ant-Man",
     universe: "Marvel Cinematic Universe",
     orderToWatch: "20",
     newPoster: "assets/img/poster-cinematic/ant-man-and-the-wasp.png",
@@ -302,6 +322,7 @@ var marvelUniverse = [
   {
     title: "Captain Marvel",
     year: "2019",
+    protagonist: "Captain Marvel",
     universe: "Marvel Cinematic Universe",
     orderToWatch: "21",
     newPoster: "assets/img/poster-cinematic/captain-marvel.jpg",
@@ -317,6 +338,7 @@ var marvelUniverse = [
   {
     title: "Avengers: Infinity War - Part II",
     year: "2019",
+    protagonist: "the Avengers",
     universe: "Marvel Cinematic Universe",
     orderToWatch: "22",
     newPoster: "assets/img/poster-cinematic/avengers-infinity-war-part-2.jpg",
@@ -332,6 +354,7 @@ var marvelUniverse = [
   {
     title: "X-Men",
     year: "2000",
+    protagonist: "the X-Men",
     universe: "X-Men Universe",
     orderToWatch: "1",
     newPoster: "assets/img/poster-x-men/x-men.jpg",
@@ -347,6 +370,7 @@ var marvelUniverse = [
   {
     title: "X-Men 2",
     year: "2003",
+    protagonist: "the X-Men",
     universe: "X-Men Universe",
     orderToWatch: "2",
     newPoster: "assets/img/poster-x-men/x2.jpg",
@@ -362,6 +386,7 @@ var marvelUniverse = [
   {
     title: "X-Men: The Last Stand",
     year: "2006",
+    protagonist: "the X-Men",
     universe: "X-Men Universe",
     orderToWatch: "3",
     newPoster: "assets/img/poster-x-men/x3.jpg",
@@ -377,6 +402,7 @@ var marvelUniverse = [
   {
     title: "X-Men Origins: Wolverine",
     year: "2009",
+    protagonist: "Wolverine",
     universe: "X-Men Universe",
     orderToWatch: "4",
     newPoster: "assets/img/poster-x-men/x-men-origins.jpg",
@@ -392,6 +418,7 @@ var marvelUniverse = [
   {
     title: "X-Men: First Class",
     year: "2011",
+    protagonist: "the X-Men",
     universe: "X-Men Universe",
     orderToWatch: "5",
     newPoster: "assets/img/poster-x-men/x-men-first-class.jpg",
@@ -407,6 +434,7 @@ var marvelUniverse = [
   {
     title: "The Wolverine",
     year: "2013",
+    protagonist: "Wolverine",
     universe: "X-Men Universe",
     orderToWatch: "6",
     newPoster: "assets/img/poster-x-men/the-wolverine.jpg",
@@ -422,6 +450,7 @@ var marvelUniverse = [
   {
     title: "X-Men: Days of Future Past",
     year: "2014",
+    protagonist: "the X-Men",
     universe: "X-Men Universe",
     orderToWatch: "7",
     newPoster: "assets/img/poster-x-men/x-men-days-of-future-past.jpg",
@@ -437,6 +466,7 @@ var marvelUniverse = [
   {
     title: "Deadpool",
     year: "2016",
+    protagonist: "Deadpool",
     universe: "X-Men Universe",
     orderToWatch: "8",
     newPoster: "assets/img/poster-x-men/deadpool.jpg",
@@ -452,6 +482,7 @@ var marvelUniverse = [
   {
     title: "X-Men: Apocalypse",
     year: "2016",
+    protagonist: "the X-Men",
     universe: "X-Men Universe",
     orderToWatch: "9",
     newPoster: "assets/img/poster-x-men/x-men-apocalypse.jpg",
@@ -467,6 +498,7 @@ var marvelUniverse = [
   {
     title: "Logan",
     year: "2017",
+    protagonist: "Wolverine",
     universe: "X-Men Universe",
     orderToWatch: "10",
     newPoster: "assets/img/poster-x-men/logan.jpg",
@@ -482,6 +514,7 @@ var marvelUniverse = [
   {
     title: "The New Mutants",
     year: "2018",
+    protagonist: "the New Mutants",
     universe: "X-Men Universe",
     orderToWatch: "11",
     newPoster: "assets/img/poster-x-men/the-new-mutants.jpg",
@@ -497,6 +530,7 @@ var marvelUniverse = [
   {
     title: "Deadpool 2",
     year: "2018",
+    protagonist: "Deadpool",
     universe: "X-Men Universe",
     orderToWatch: "12",
     newPoster: "assets/img/poster-x-men/deadpool2.jpg",
@@ -512,6 +546,7 @@ var marvelUniverse = [
   {
     title: "X-Men: Dark Phoenix",
     year: "2018",
+    protagonist: "the X-Men",
     universe: "X-Men Universe",
     orderToWatch: "13",
     newPoster: "assets/img/coming-soon.jpg",
