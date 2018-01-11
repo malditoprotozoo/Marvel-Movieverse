@@ -11,7 +11,6 @@ body {
   background-repeat: no-repeat;
 }
 
-<<<<<<< Updated upstream
 /* Carrousel  */
 
 h1{
@@ -38,8 +37,7 @@ h1{
 	height:400px;
 	background-repeat: no-repeat;
 }
-<<<<<<< Updated upstream
-=======
+
 .navbar-inverse{
   background-color:#A52E2F;
   float: none;
@@ -75,8 +73,6 @@ h1{
 .panel-collapse div.list-group div.list-group{margin: 0;}
 .panel-collapse div.list-group .list-group a.list-group-item {border-top: 1px solid #ddd;border-bottom: 0;padding-left: 30px;}
 
->>>>>>> Stashed changes
-=======
 
 
 
@@ -101,4 +97,4 @@ h1{
     padding: 0 12px 0 6px;
     margin: 0 0 0 12px;
     }
->>>>>>> Stashed changes
+

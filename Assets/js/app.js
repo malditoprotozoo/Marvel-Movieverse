@@ -1,4 +1,4 @@
-<<<<<<< Updated upstream
+
 /* carrousel velocidad */
 
 $('carousel').carousel({
@@ -6,8 +6,7 @@ $('carousel').carousel({
   interval:1000,
   pause:"hover"
 })
-<<<<<<< Updated upstream
-=======
+
 $(document).ready(function () {
   var trigger = $('.hamburger'),
       overlay = $('.overlay'),
@@ -36,8 +35,7 @@ $(document).ready(function () {
         $('#wrapper').toggleClass('toggled');
   });  
 });
->>>>>>> Stashed changes
-=======
+=
 
 
 /* star ratings */
@@ -52,4 +50,3 @@ clickFn: function (select) {
 
 });
 
->>>>>>> Stashed changes
