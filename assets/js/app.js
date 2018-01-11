@@ -81,9 +81,9 @@ var linkGenerator = (function(toApply, arr) {
       if (obj.title == toCompare) {
         var popularComicStr = obj.mostPopularComic.replace(/ /g, "+");
         var url = "https://www.bookdepository.com/search?searchTerm=" + obj.mostPopularComic.replace(/#/g, "") + "&search=Find+book";
-        $(firstAppearanceContainer).append(`<a href="https://www.bookdepository.com/search?searchTerm=` + obj.firstAppearance.replace(/#/g, "") + `&search=Find+book" target="_blank"><img src="` + obj.imageAppearance + `" class="img-comic"></a>`);
-        $(mostPopularContainer).append(`<a href="https://www.bookdepository.com/search?searchTerm=` + obj.mostPopularComic.replace(/#/g, "") + `&search=Find+book" target="_blank"><img src="` + obj.imagePopularComic + `" class="img-comic"></a>`);
-        $(whereToBeginContainer).append(`<a href="https://www.bookdepository.com/search?searchTerm=` + obj.whereToBegin.replace(/#/g, "") + `&search=Find+book" target="_blank"><img src="` + obj.imageToBegin + `" class="img-comic"></a>`);
+        $(firstAppearanceContainer).append(`<a href="https://www.bookdepository.com/search?searchTerm=` + obj.firstAppearance.replace(/#/g, "") + `&search=Find+book" target="_blank"><span class="description-comic">` + obj.title + `'s First Appearance</span><img src="` + obj.imageAppearance + `" class="img-comic"></a>`);
+        $(mostPopularContainer).append(`<a href="https://www.bookdepository.com/search?searchTerm=` + obj.mostPopularComic.replace(/#/g, "") + `&search=Find+book" target="_blank"><span class="description-comic">Most Popular Comic</span><img src="` + obj.imagePopularComic + `" class="img-comic"></a>`);
+        $(whereToBeginContainer).append(`<a href="https://www.bookdepository.com/search?searchTerm=` + obj.whereToBegin.replace(/#/g, "") + `&search=Find+book" target="_blank"><span class="description-comic">Where do I start reading?</span><img src="` + obj.imageToBegin + `" class="img-comic"></a>`);
         $("#modal").modal("show");
       }
     }
