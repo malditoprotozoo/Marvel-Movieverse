@@ -23,6 +23,7 @@ h1{
 	background-image: url(../img/Estreno1.jpg);
 	height:400px;
 	background-repeat: no-repeat;
+	width: 100%;
 	
 }
 
@@ -30,12 +31,14 @@ h1{
 	background-image: url(../img/Estreno2.jpg);
 	height:400px;
 	background-repeat: no-repeat;
+	width: 100%;
 }
 
 #img3 {
 	background-image: url(../img/Estreno3.jpg);
 	height:400px;
 	background-repeat: no-repeat;
+	width: 100%;
 }
 
 .navbar-inverse{
@@ -57,9 +60,10 @@ h1{
 .form-group{
     width: 130px;
     height: 25px;
-
+    
 }
 
+/* menu acordion */
 #accordion .glyphicon { margin-right:10px; }
 .panel-collapse>.list-group .list-group-item:first-child {border-top-right-radius: 0;border-top-left-radius: 0;}
 .panel-collapse>.list-group .list-group-item {border-width: 1px 0;}
@@ -74,7 +78,7 @@ h1{
 .panel-collapse div.list-group .list-group a.list-group-item {border-top: 1px solid #ddd;border-bottom: 0;padding-left: 30px;}
 
 
-
+/* fin de menu */
 
 
 .gl-star-rating[data-star-rating] .gl-star-rating-stars {
@@ -96,5 +100,5 @@ h1{
     vertical-align: middle;
     padding: 0 12px 0 6px;
     margin: 0 0 0 12px;
-    }
+}
 

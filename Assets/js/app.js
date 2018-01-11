@@ -1,10 +1,7 @@
 
 /* carrousel velocidad */
-
-$('carousel').carousel({
-
-  interval:1000,
-  pause:"hover"
+$('.carousel').carousel({
+  interval: 1000
 })
 
 $(document).ready(function () {
@@ -50,3 +47,21 @@ clickFn: function (select) {
 
 });
 
+/* star carga de la pagina */
+
+$(document).ready(function(){
+   $('.container1').fadeOut(3300);
+});
+
+$(document).ready(function(){
+   $('.container2').delay(3100).fadeIn("slow");
+});
+
+
+// este fade pertece a la vista de inicio
+
+$(document).ready(function(){
+  $('.btn-primary').click(function(){
+    $('.container3').click();
+  });
+});
