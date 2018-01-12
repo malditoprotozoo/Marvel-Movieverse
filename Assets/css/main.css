@@ -24,7 +24,7 @@ h1{
 	background-repeat: no-repeat;
 	background-position: center;
 	width: 100%;
-  	height: 400px;
+  height: 400px;
 	
 }
 
@@ -45,10 +45,11 @@ h1{
 }
 
 .navbar-inverse{
-  background-color:#A52E2F;
-  float: none;
+  background-color:#000;
+  position: sticky-top;
 }
 
+/*NAVBAR*/
 .navbar-brand{
   width:10%;
   height:8vh;
@@ -60,26 +61,16 @@ h1{
   height: 3em;
 }
 
-.form-group{
-    width: 130px;
-    height: 25px;
-    
+/*BUSCADOR*/
+.form-control{
+  border-radius: 4px;
+  border-color: #E91215;
 }
 
-/* menu acordion */
-#accordion .glyphicon { margin-right:10px; }
-.panel-collapse>.list-group .list-group-item:first-child {border-top-right-radius: 0;border-top-left-radius: 0;}
-.panel-collapse>.list-group .list-group-item {border-width: 1px 0;}
-.panel-collapse>.list-group {margin-bottom: 0;}
-.panel-collapse .list-group-item {border-radius:0;}
-
-.panel-collapse .list-group .list-group {margin: 0;margin-top: 10px;}
-.panel-collapse .list-group-item li.list-group-item {margin: 0 -15px;border-top: 1px solid #ddd;border-bottom: 0;padding-left: 30px;}
-.panel-collapse .list-group-item li.list-group-item:last-child {padding-bottom: 0;}
-
-.panel-collapse div.list-group div.list-group{margin: 0;}
-.panel-collapse div.list-group .list-group a.list-group-item {border-top: 1px solid #ddd;border-bottom: 0;padding-left: 30px;}
-
+/* menu accordion */
+.panel-body { padding:0px; }
+.panel-body table tr td { padding-left: 15px }
+.panel-body .table {margin-bottom: 0px; }
 
 /* fin de menu */
 
