@@ -117,7 +117,7 @@ var contentGenerator = (function(toApply, arr) {
         } else {
           $(posterContainer).append(`<img src="` + obj.newPoster + `" class="modal-poster">`);
         }
-        $(trailerContainer).append(`<iframe src="` + obj.trailer + `" frameborder="0"></iframe>`);
+        $(trailerContainer).append(`<iframe src="` + obj.trailer + `" frameborder="0" allowfullscreen></iframe>`);
         if (obj.plot == undefined) {
           obj.plot = "Coming Soon";
           $(infoContainer).append(`<p class="p-plot">` + obj.plot + `</p>`);
