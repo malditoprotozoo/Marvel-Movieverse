@@ -528,7 +528,7 @@ var marvelUniverse = [
     imageToBegin: "assets/img/fox-comic-covers/Marvel_Graphic_Novel_Vol_1_4_New_Mutants_Classic.jpg"
   },
   {
-    title: "Deadpool 2",
+    title: "Untitled Deadpool Sequel",
     year: "2018",
     protagonist: "Deadpool",
     universe: "X-Men Universe",
@@ -549,7 +549,7 @@ var marvelUniverse = [
     protagonist: "the X-Men",
     universe: "X-Men Universe",
     orderToWatch: "13",
-    newPoster: "assets/img/coming-soon.jpg",
+    newPoster: "assets/img/poster-x-men/x-men-dark-phoenix.jpg",
     trailer: "https://www.youtube.com/embed/7ndbubMW21Y",
     status: "Coming soon",
     firstAppearance: "X-Men (1963) #1",
