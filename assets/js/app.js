@@ -6,6 +6,9 @@ $(document).ready(function() {
   });
   deleteVideo("#modal");
   showComingSoon(marvelUniverse);
+  selectBestMovies(marvelUniverse);
+  selectWorstMovies(marvelUniverse);
+  selectMovieByGenre(marvelUniverse);
 });
 
 /* Obtiene información de la API */
@@ -18,7 +21,6 @@ var getInfo = (function(mainArr) {
   }
   for (var n = 0; n < titlesArr.length; n++) {
     var queryString = "https://www.omdbapi.com/?apikey=3a181f1c&t=" + titlesArr[n].replace(/ /g, "+") + "&y=" + yearsArr[n];
-    console.log(queryString);
     $.ajax({
       url: queryString,
       method: "GET"
@@ -54,8 +56,16 @@ var getInfo = (function(mainArr) {
         if (response.Poster === "N/A") {
           for (var x = 0; x < mainArr.length; x++) {
             var eachObj = mainArr[x];
-            if (eachObj.title == response.Title) {
+            if (eachObj.title === response.Title) {
               eachObj.poster = eachObj.newPoster;
+            }
+          }
+        }
+        if (response.Genre !== undefined) {
+          for (var a = 0; a < mainArr.length; a++) {
+            var eachObj = mainArr[a];
+            if (eachObj.title === response.Title) {
+              eachObj.genre = response.Genre;
             }
           }
         }
@@ -65,13 +75,154 @@ var getInfo = (function(mainArr) {
 });
 
 /* Selecciona las películas con un rating por sobre el 80% */
-var orderPerRating = (function(obj) {
-  for (var key in obj) {
-    if (parseInt(obj[key]) > 80) {
-      bestMovies[key] = obj[key];
+var selectBestMovies = (function(arr) {
+  $("#best-movies").click(function() {
+    var newArr = [];
+    $("#movies").children().remove();
+    for (var i = 0; i < arr.length; i++) {
+      if (parseInt(arr[i].ratings) >= 80) {
+        newArr.push(arr[i]);
+      }
     }
-  }
-  console.log(bestMovies);
+    postInfo(newArr);
+  });
+});
+
+var selectWorstMovies = (function(arr) {
+  $("#worst-movies").click(function() {
+    var newArr = [];
+    $("#movies").children().remove();
+    for (var i = 0; i < arr.length; i++) {
+      if (parseInt(arr[i].ratings) <= 40) {
+        newArr.push(arr[i]);
+      }
+    }
+    postInfo(newArr);
+    });
+  });
+
+var selectMovieByGenre = (function(arr) {
+  $("#action-movies").click(function() {
+    var newArr = [];
+    $("#movies").children().remove();
+    for (var i = 0; i < arr.length; i++) {
+      if (arr[i].genre.includes("Action")) {
+        newArr.push(arr[i]);
+      }
+    }
+    if (newArr.length === 0) {
+      $("#movies").append(`<h2 class="error-msg">Sorry, there are no movies that match your search :(</h2>`);
+    } else {
+      postInfo(newArr);
+    }
+  });
+
+  $("#adventure-movies").click(function() {
+    var newArr = [];
+    $("#movies").children().remove();
+    for (var i = 0; i < arr.length; i++) {
+      if (arr[i].genre.includes("Adventure")) {
+        newArr.push(arr[i]);
+      }
+    }
+    if (newArr.length === 0) {
+      $("#movies").append(`<h2 class="error-msg">Sorry, there are no movies that match your search :(</h2>`);
+    } else {
+      postInfo(newArr);
+    }
+  });
+
+  $("#comedy-movies").click(function() {
+    var newArr = [];
+    $("#movies").children().remove();
+    for (var i = 0; i < arr.length; i++) {
+      if (arr[i].genre.includes("Comedy")) {
+        newArr.push(arr[i]);
+      }
+    }
+    if (newArr.length === 0) {
+      $("#movies").append(`<h2 class="error-msg">Sorry, there are no movies that match your search :(</h2>`);
+    } else {
+      postInfo(newArr);
+    }
+  });
+
+  $("#drama-movies").click(function() {
+    var newArr = [];
+    $("#movies").children().remove();
+    for (var i = 0; i < arr.length; i++) {
+      if (arr[i].genre.includes("Drama")) {
+        newArr.push(arr[i]);
+      }
+    }
+    if (newArr.length === 0) {
+      $("#movies").append(`<h2 class="error-msg">Sorry, there are no movies that match your search :(</h2>`);
+    } else {
+      postInfo(newArr);
+    }
+  });
+
+  $("#fantasy-movies").click(function() {
+    var newArr = [];
+    $("#movies").children().remove();
+    for (var i = 0; i < arr.length; i++) {
+      if (arr[i].genre.includes("Fantasy")) {
+        newArr.push(arr[i]);
+      }
+    }
+    if (newArr.length === 0) {
+      $("#movies").append(`<h2 class="error-msg">Sorry, there are no movies that match your search :(</h2>`);
+    } else {
+      postInfo(newArr);
+    }
+  });
+
+  $("#romance-movies").click(function() {
+    var newArr = [];
+    $("#movies").children().remove();
+    for (var i = 0; i < arr.length; i++) {
+      if (arr[i].genre.includes("Romance")) {
+        newArr.push(arr[i]);
+      }
+    }
+    if (newArr.length === 0) {
+      $("#movies").append(`<h2 class="error-msg">Sorry, there are no movies that match your search :(</h2>`);
+    } else {
+      postInfo(newArr);
+    }
+  });
+
+  $("#scifi-movies").click(function() {
+    var newArr = [];
+    $("#movies").children().remove();
+    for (var i = 0; i < arr.length; i++) {
+      if (arr[i].genre.includes("Sci-Fi")) {
+        newArr.push(arr[i]);
+      }
+    }
+    if (newArr.length === 0) {
+      $("#movies").append(`<h2 class="error-msg">Sorry, there are no movies that match your search :(</h2>`);
+    } else {
+      postInfo(newArr);
+    }
+  });
+});
+
+var multiverseSelector = (function(arr) {
+  $("#mcu-movies").click(function() {
+    var newArr = [];
+    $("#movies").children().remove();
+    for (var i = 0; i < arr.length; i++) {
+      if (arr[i].universe === "Marvel Cinematic Universe") {
+        newArr.push(arr[i]);
+      }
+    }
+    if (newArr.length === 0) {
+      $("#movies").append(`<h2 class="error-msg">Sorry, there are no movies that match your search :(</h2>`);
+    } else {
+      postInfo(newArr);
+    }
+  });
 });
 
 /* Toma la información de la data y la postea en la página */
@@ -150,9 +301,3 @@ var showComingSoon = (function(arr) {
     }
   }
 });
-
-
-  // background-image: url('../img/poster-x-men/x-men-dark-phoenix.jpg');
-  //style="background-image: url(../` + arr[i].newPoster + `)"
-  //file:///home/laboratoria/Laboratoria/hackathon/official-marvel-movieverse/assets/img/poster-cinematic/black-panther.jpg
-  //file:///home/laboratoria/Laboratoria/hackathon/assets/img/poster-cinematic/black-panther.jpg

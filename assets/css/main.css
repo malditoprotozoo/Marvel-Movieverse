@@ -185,6 +185,7 @@ input.form-control.form-control-sm::-moz-placeholder {
 #sidebar .panel-body {
   background-color: white;
   text-align: center;
+  cursor: pointer;
 }
 
 #sidebar .panel-heading {
