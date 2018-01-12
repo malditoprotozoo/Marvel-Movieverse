@@ -130,7 +130,7 @@ input.form-control.form-control-sm::-moz-placeholder {
   display: block;
 }
 
-#comics-info .col-lg-4 {
+#comics-info .col-sm-4 {
   height: 200px;
   overflow: hidden;
   display: flex;
@@ -149,8 +149,18 @@ input.form-control.form-control-sm::-moz-placeholder {
   margin-top: 1em;
 }
 
+#trailer iframe {
+  width: 100%;
+  height: 331px;
+}
+
 @media (max-width: 992px) {
-  #modal .container-fluid {
+  #modal .modal-body .container-fluid .col-lg-4, #modal .modal-body .container-fluid .col-lg-8  {
     display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+  }
+  #info {
+    text-align: center;
   }
 }
