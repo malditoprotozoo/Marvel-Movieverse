@@ -125,9 +125,9 @@ var contentGenerator = (function(toApply, arr) {
           $(infoContainer).append(`<p class="p-plot">` + obj.plot + `</p>`);
         }
         var url = "https://www.bookdepository.com/search?searchTerm=" + obj.mostPopularComic.replace(/#/g, "") + "&search=Find+book";
-        $(firstAppearanceContainer).append(`<a href="https://www.bookdepository.com/search?searchTerm=` + obj.firstAppearance.replace(/#/g, "") + `&search=Find+book" target="_blank"><span class="description-comic">First Appearance of ` + obj.protagonist + `</span><img src="` + obj.imageAppearance + `" class="img-comic"></a>`);
-        $(mostPopularContainer).append(`<a href="https://www.bookdepository.com/search?searchTerm=` + obj.mostPopularComic.replace(/#/g, "") + `&search=Find+book" target="_blank"><span class="description-comic">Most Popular Comic of ` + obj.protagonist + `</span><img src="` + obj.imagePopularComic + `" class="img-comic"></a>`);
-        $(whereToBeginContainer).append(`<a href="https://www.bookdepository.com/search?searchTerm=` + obj.whereToBegin.replace(/#/g, "") + `&search=Find+book" target="_blank"><span class="description-comic">Where should you start reading ` + obj.protagonist + `</span><img src="` + obj.imageToBegin + `" class="img-comic"></a>`);
+        $(firstAppearanceContainer).append(`<a href="https://www.bookdepository.com/search?searchTerm=` + obj.firstAppearance.replace(/#/g, "") + `&search=Find+book" target="_blank"><span class="description-comic">First Appearance</span><img src="` + obj.imageAppearance + `" class="img-comic"></a>`);
+        $(mostPopularContainer).append(`<a href="https://www.bookdepository.com/search?searchTerm=` + obj.mostPopularComic.replace(/#/g, "") + `&search=Find+book" target="_blank"><span class="description-comic">Most Popular Comic Book</span><img src="` + obj.imagePopularComic + `" class="img-comic"></a>`);
+        $(whereToBeginContainer).append(`<a href="https://www.bookdepository.com/search?searchTerm=` + obj.whereToBegin.replace(/#/g, "") + `&search=Find+book" target="_blank"><span class="description-comic">Where to Start Reading</span><img src="` + obj.imageToBegin + `" class="img-comic"></a>`);
         $("#modal").modal("show");
       }
     }
