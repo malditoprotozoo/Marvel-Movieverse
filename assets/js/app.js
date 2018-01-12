@@ -9,6 +9,8 @@ $(document).ready(function() {
   selectBestMovies(marvelUniverse);
   selectWorstMovies(marvelUniverse);
   selectMovieByGenre(marvelUniverse);
+  multiverseSelector(marvelUniverse);
+  adjustSidebar();
 });
 
 /* Obtiene información de la API */
@@ -223,6 +225,20 @@ var multiverseSelector = (function(arr) {
       postInfo(newArr);
     }
   });
+  $("#fox-movies").click(function() {
+    var newArr = [];
+    $("#movies").children().remove();
+    for (var i = 0; i < arr.length; i++) {
+      if (arr[i].universe === "X-Men Universe") {
+        newArr.push(arr[i]);
+      }
+    }
+    if (newArr.length === 0) {
+      $("#movies").append(`<h2 class="error-msg">Sorry, there are no movies that match your search :(</h2>`);
+    } else {
+      postInfo(newArr);
+    }
+  });
 });
 
 /* Toma la información de la data y la postea en la página */
@@ -239,6 +255,7 @@ var postInfo = (function(arr) {
 /* Cambia el display de la información posteada de display none a block */
 var showInfo = (function() {
   $(".content").slideDown("slow");
+  adjustSidebar();
 });
 
 /* Genera el contenido de cada modal */
@@ -301,3 +318,8 @@ var showComingSoon = (function(arr) {
     }
   }
 });
+
+var adjustSidebar = (function() {
+  var paddingBottom = $("#movies-container").height() - 137 + "px";
+  $(".panel-group").css("padding-bottom", paddingBottom);
+})
