@@ -11,12 +11,17 @@ body {
   font-family: 'Roboto', sans-serif;
   width: 100%;
   /* height: 100vh; */
-  background-image: url('../img/fondo.jpg');
+  /* background-image: url('../img/fondo.jpg'); */
+  background-color: black;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
+/* nav.navbar {
+  border-bottom: 3px solid #54d400;
+} */
 
 #logo {
   width: 30px;
@@ -73,19 +78,17 @@ input.form-control.form-control-sm::-moz-placeholder {
 
 #main-container {
   overflow: hidden;
-  margin-top: 10px;
 }
 
 #movies-container {
-  padding: 2em;
-  padding-right: 0;
+  padding: 0;
 }
 
 #movies {
-  height: 50vh;
-  padding: 1em;
+  min-height: 70vh;
+  max-height: 80vh;
   background-color: rgba(255, 255, 255, 0.6);
-  box-shadow: 0px 0px 40px 40px rgba(255, 255, 255, 0.6);
+  /* box-shadow: 0px 0px 40px 40px rgba(255, 255, 255, 0.6); */
   overflow: auto;
   padding-bottom: 0;
 }
@@ -99,7 +102,7 @@ input.form-control.form-control-sm::-moz-placeholder {
   display: inline-block;
   text-align: center;
   width: 200px;
-  margin: 2em;
+  margin: 1em;
   overflow: hidden;
   cursor: pointer;
 }
@@ -155,8 +158,194 @@ input.form-control.form-control-sm::-moz-placeholder {
 }
 
 #sidebar {
-  background-color: white;
+  padding: 0;
 }
+
+#sidebar .panel-group {
+  background-color: #f0141e;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 5px;
+}
+
+#sidebar .panel-title {
+  width: 100%;
+  font-family: "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: 300;
+  margin-top: 8px;
+}
+
+#sidebar .panel-title a {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  color: white;
+}
+
+#sidebar .panel-body {
+  background-color: white;
+  text-align: center;
+}
+
+/*footer*/
+.footer {
+  background: #2b2a2a none repeat scroll 0 0;
+  margin: 0;
+  padding: 20px 0;
+}
+
+.footer img {
+  width: 100%;
+}
+
+.footer_dv {
+  width: 100%;
+}
+
+.footer_dv h4 {
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.footer_dv ul {
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer_dv ul li:first-child {
+  border-top: medium none;
+  box-shadow: none;
+}
+
+.footer_dv ul li {
+  color: #fff;
+  padding: 5px 0;
+}
+
+.footer_dv p {
+  color: #fff;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0 0 15px;
+  text-align: justify;
+}
+
+.a-font {
+  color: #fff!important;
+  text-decoration: none!important;
+
+}
+
+.copyright {
+  min-height: 79px;
+  background-color: #343a40;
+}
+
+.copyright p {
+  text-align:left;
+  color:#FFF;
+  padding:10px 0;
+  margin-bottom:0px;
+}
+
+.heading7 {
+  font-size:21px;
+  font-weight:700;
+  color:#d9d6d6;
+  margin-bottom:22px;
+}
+
+.post p {
+  font-size:12px;
+  color:#FFF;
+  line-height:20px;
+}
+
+.post p span {
+  display:block;
+  color:#8f8f8f;
+}
+
+.bottom_ul {
+  list-style-type:none;
+  float: right;
+  margin-bottom: 0px;
+  padding-top: 22px;
+}
+
+.bottom_ul li {
+  float:left;
+  line-height:40px;
+}
+
+.bottom_ul li::after {
+  content:"";
+  color:#FFF;
+  margin-right:8px;
+  margin-left:8px;
+}
+
+.bottom_ul li a {
+  color:#FFF;
+}
+
+#copyright p, #copyright ul {
+    margin: 0;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+}
+
+footer.site-footer ul {
+    padding-left: 0;
+    margin-bottom: 20px;
+    list-style: none;
+}
+
+@media (min-width: 768px){
+    .navbar-right {
+        float: right!important;
+        margin-right: -15px;
+    }
+}
+.list-inline>li {
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.list-inline {
+    padding-left: 0;
+    margin-left: -5px;
+    list-style: none;
+}
+.py-5 {
+    padding-top: 3rem!important;
+    padding-bottom: 3rem!important;
+}
+.bg-dark {
+    background-color: #222!important;
+}
+
+#linkMarvel{
+  margin-top: 3em;
+  margin-left: 1em;
+}
+
+#iconRed{
+  display: flex;
+  margin-top: 1.5em;
+}
+
+.iconSocialMedia{
+  margin: 0.5em;
+  font-size: 2em;
+}
+
 
 @media (max-width: 992px) {
   #modal .modal-body .container-fluid .col-lg-4, #modal .modal-body .container-fluid .col-lg-8  {
@@ -164,7 +353,25 @@ input.form-control.form-control-sm::-moz-placeholder {
     justify-content: center;
     margin-bottom: 1em;
   }
+
   #info {
     text-align: center;
+  }
+
+  #sidebar {
+    padding-left: 0;
+  }
+  
+  #sidebar .panel-group {
+    width: 100%;
+  }
+
+  .footer_dv {
+    text-align: center;
+  }
+
+  #social-net {
+    display: flex;
+    justify-content: center;
   }
 }
