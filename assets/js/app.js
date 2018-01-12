@@ -5,6 +5,7 @@ $(document).ready(function() {
     }, 1000)
   });
   deleteVideo("#modal");
+  showComingSoon(marvelUniverse);
 });
 
 /* Obtiene información de la API */
@@ -30,8 +31,6 @@ var getInfo = (function(mainArr) {
             var eachObj = mainArr[c];
             if (eachObj.title == response.Title) {
               eachObj.ratings = response.Ratings[1].Value;
-              // eachObj.plot = response.Plot;
-              // eachObj.poster = response.Poster;
             }
           }
         }
@@ -141,17 +140,19 @@ var deleteVideo = (function(modal) {
   })
 });
 
-// $('#pic-top').append('<img class="responsive-img circle profilepic right" src="' +
-//        + photoURL + '.jpg">');
+var showComingSoon = (function(arr) {
+  $('.carousel').carousel();
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i].status === "Coming soon") {
+      var carouselImg = `<div class="d-block img-fluid" style="background: url(` + arr[i].newPoster + `) no-repeat center center; background-size: cover"></div>`;
+      var carouselItem = `<div class="carousel-item">`+carouselImg+`<div class="carousel-caption"><h3>` + arr[i].title + `</h3></div></div>`;
+      $(".carousel-inner").append(carouselItem);
+    }
+  }
+});
 
-// function printFantasyMovies() {
-//   var imgCategory = $('#movieImgs1');
-//   for (var i = 0; i < data.length; i++) {
-//     if (data[i].genero === 'Fantasía, Familiar' || data[i].genero === 'Fantasía, Drama' && $(imgCategory).children() <= 5) {
-//       imgCategory.append('<div class="images col s3 m3 l3 xl3">  <a href="#"> <img src="' + data[i].poster
-//                         + '" style="width:100%"></a> <h5 class="name">' + data[i].nombre +'</h5> <p style="font-weight:bold; font-size:1em;">'
-//                         + data[i].año + '</p> </div>');
-//     }
-//   }
-//   $('#categoria1').append('<h3>Fantasy</h3>');
-// }
+
+  // background-image: url('../img/poster-x-men/x-men-dark-phoenix.jpg');
+  //style="background-image: url(../` + arr[i].newPoster + `)"
+  //file:///home/laboratoria/Laboratoria/hackathon/official-marvel-movieverse/assets/img/poster-cinematic/black-panther.jpg
+  //file:///home/laboratoria/Laboratoria/hackathon/assets/img/poster-cinematic/black-panther.jpg
