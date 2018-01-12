@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
   </head>
@@ -41,25 +42,117 @@
     <!-- Fila de contenido principal -->
     <div class="container-fluid" id="main-container">
       <div class="row">
-        <!-- Columna de filtros -->
-        <div class="col-12 col-lg-3" id="sidebar">
-          <ul class="nav flex-column">
-            <li class="nav-item">lorem</li>
-            <li class="nav-item">lorem</li>
-            <li class="nav-item">lorem</li>
-            <li class="nav-item">lorem</li>
-            <li class="nav-item">lorem</li>
-            <li class="nav-item">lorem</li>
-          </ul>
+        <!-- COLUMNA DE FILTROS -->
+        <div class="col-12 col-lg-2" id="sidebar">
+          <div class="panel-group">
+            <!-- Seleccionar por Universo -->
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" href="#universe-selector">Universe</a>
+                </h4>
+              </div>
+              <div class="panel-collapse collapse" id="universe-selector">
+                <div class="panel-body">Marvel Cinematic Universe</div>
+                <div class="panel-body">X-Men: Film Series</div>
+              </div>
+            </div>
+            <!-- Seleccionar por status de película -->
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" href="#status-selector">Status</a>
+                </h4>
+              </div>
+              <div class="panel-collapse collapse" id="status-selector">
+                <div class="panel-body">Watch at Home</div>
+                <div class="panel-body">Now Playing</div>
+                <div class="panel-body">Coming Soon</div>
+                <div class="panel-body">Upcoming</div>
+              </div>
+            </div>
+            <!-- Seleccionar por Ranking -->
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" href="#ranking-selector">Ranking</a>
+                </h4>
+              </div>
+              <div class="panel-collapse collapse" id="ranking-selector">
+                <div class="panel-body">Best Movies</div>
+                <div class="panel-body">Worst Movies</div>
+              </div>
+            </div>
+            <!-- Seleccionar por Género -->
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" href="#genre-selector">Genre</a>
+                </h4>
+              </div>
+              <div class="panel-collapse collapse" id="genre-selector">
+                <div class="panel-body">Action</div>
+                <div class="panel-body">Adventure</div>
+                <div class="panel-body">Comedy</div>
+                <div class="panel-body">Drama</div>
+                <div class="panel-body">Fantasy</div>
+                <div class="panel-body">Romance</div>
+                <div class="panel-body">Sci-Fi</div>
+              </div>
+            </div>
+          </div>
         </div>
         <!-- Columna de resultado (películas) -->
-        <div class="col-12 col-lg-9" id="movies-container">
-          <div id="movies">
-            
+        <div class="col-12 col-lg-10" id="movies-container">
+          <div id="movies"></div>
+        </div>
+      </div>
+    </div>
+    <!-- footer snniped -->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6  col-md-6">
+            <div class="footer_dv">
+              <!--GUARDAR IMAGEN EN LA CARPETA CORRECTA Y CAMBIAR RUTA-->
+              <img class="img-responsive" src="assets/img/marvel-universe.png" alt="about">
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3">
+            <div class="footer_dv">
+              <div class="line-dash"></div>
+              <ul id="linkMarvel">
+                <li><a class="a-font" href="http://marvel.com/" target="_blank">Official Marvel Site</a></li>
+                <li><a class="a-font" href="http://marvel.wikia.com/wiki/Marvel_Database" target="_blank">Marvel Database</a></li>
+                <li><a class="a-font" href="https://www.youtube.com/channel/UCvC4D8onUfXzvjTOM-dBfEA" target="_blank">Marvel Entertainment</a></li>
+                <li><a class="a-font" href="http://howtoarsenio.blogspot.com/" target="_blank">Comic Blog: How to Arsenio Lupin </a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3">
+            <div class="footer_dv" id="social-net">
+              <div class="line-dash"></div>
+              <ul id="iconRed">
+                <li class="iconSocialMedia"><a class="a-font" href="#" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+                <li class="iconSocialMedia"><a class="a-font" href="#" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+                <li class="iconSocialMedia"><a class="a-font" href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <footer class="py-5 bg-dark">
+      <div id="copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <p>2018 No copyright infringement intended. All right belong to their respective owners. This is done with purely educational purposes.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <!-- Modal -->
     <div class="modal fade bd-example-modal-lg" id="modal">
       <div class="modal-dialog modal-lg" role="document">

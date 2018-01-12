@@ -143,3 +143,15 @@ var deleteVideo = (function(modal) {
 
 // $('#pic-top').append('<img class="responsive-img circle profilepic right" src="' +
 //        + photoURL + '.jpg">');
+
+// function printFantasyMovies() {
+//   var imgCategory = $('#movieImgs1');
+//   for (var i = 0; i < data.length; i++) {
+//     if (data[i].genero === 'Fantasía, Familiar' || data[i].genero === 'Fantasía, Drama' && $(imgCategory).children() <= 5) {
+//       imgCategory.append('<div class="images col s3 m3 l3 xl3">  <a href="#"> <img src="' + data[i].poster
+//                         + '" style="width:100%"></a> <h5 class="name">' + data[i].nombre +'</h5> <p style="font-weight:bold; font-size:1em;">'
+//                         + data[i].año + '</p> </div>');
+//     }
+//   }
+//   $('#categoria1').append('<h3>Fantasy</h3>');
+// }
