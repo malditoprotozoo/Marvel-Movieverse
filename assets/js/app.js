@@ -4,6 +4,7 @@ $(document).ready(function() {
       postInfo(marvelUniverse);
     }, 1000)
   });
+  deleteVideo("#modal");
 });
 
 /* Obtiene información de la API */
@@ -132,6 +133,12 @@ var contentGenerator = (function(toApply, arr) {
       }
     }
   });
+});
+
+var deleteVideo = (function(modal) {
+  $(modal).on("hidden.bs.modal", function() {
+    $("#trailer").children().remove();
+  })
 });
 
 // $('#pic-top').append('<img class="responsive-img circle profilepic right" src="' +

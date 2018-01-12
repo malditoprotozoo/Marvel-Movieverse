@@ -154,6 +154,10 @@ input.form-control.form-control-sm::-moz-placeholder {
   height: 331px;
 }
 
+#sidebar {
+  background-color: white;
+}
+
 @media (max-width: 992px) {
   #modal .modal-body .container-fluid .col-lg-4, #modal .modal-body .container-fluid .col-lg-8  {
     display: flex;
