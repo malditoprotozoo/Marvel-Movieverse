@@ -10,7 +10,6 @@ $(document).ready(function() {
   selectWorstMovies(marvelUniverse);
   selectMovieByGenre(marvelUniverse);
   multiverseSelector(marvelUniverse);
-  adjustSidebar();
 });
 
 /* Obtiene información de la API */
@@ -255,7 +254,6 @@ var postInfo = (function(arr) {
 /* Cambia el display de la información posteada de display none a block */
 var showInfo = (function() {
   $(".content").slideDown("slow");
-  adjustSidebar();
 });
 
 /* Genera el contenido de cada modal */
