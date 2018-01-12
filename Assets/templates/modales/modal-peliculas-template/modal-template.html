@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>modal test</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="modalStyle.css">
+</head>
+
+<body>
+
+  <!--ESTO DEBE IR POR DEFECTO EN EL HTML -->
+
+  <!-- Button trigger modal -->
+  <!-- ENLAZAR MODAL AL ELEMENTO QUE CORRESPONDE -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">
+  Launch demo modal
+</button>
+
+  <!-- ESTRUCTURA MODAL -->
+  <div class="modal fade bd-example-modal-lg" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <!-- Titulo Modal -->
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">MODAL TITLE</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        </div>
+        <!-- Contenido Modal -->
+        <div class="modal-body">
+          <div class="container-fluid">
+            <!-- Primera Row POSTER + TRAILER-->
+            <div class="row">
+              <!-- POSTER (4 columnas) -->
+              <div class="col-md-4">
+                <div class="">
+
+                  <!-- AQUÍ VA EL POSTER DE LA PELICULA AGREGADO DESDE JQUERY-->
+
+                </div>
+              </div>
+              <!-- TRAILER (8 columnas) -->
+              <div class="col-md-8">
+                <div class="">
+
+                  <!-- AQUÍ VA EL TRAILER DE LA PELICULA AGREGADO DESDE JQUERY-->
+
+                </div>
+              </div>
+            </div>
+            <!-- Segunda Row INFORMACION-->
+            <div class="row">
+              <div class="col-md-12">
+                <div class="">
+
+                  <!-- AQUÍ VA INFORMACION DE LA PELICULA AGREGADO DESDE JQUERY-->
+
+
+                </div>
+              </div>
+            </div>
+            <!-- Tercera Row COMICS -->
+            <div class="row">
+              <!-- COMIC FIRST APPEARANCE (4 columnas) -->
+              <div class="col-md-4">
+                <div class="">
+
+                  <!-- AQUÍ VA IMAGEN DEL COMIC FIRST APPEARANCE AGREGADO DESDE JQUERY-->
+
+                </div>
+              </div>
+              <!-- COMIC MOST POPULAR (4 columnas) -->
+              <div class="col-md-4">
+                <div class="">
+
+                  <!-- AQUÍ VA IMAGEN DEL COMIC MOST POPULAR AGREGADO DESDE JQUERY-->
+
+                </div>
+              </div>
+              <!-- COMIC WHERE TO BEGIN (4 columnas) -->
+              <div class="col-md-4">
+                <div class="">
+
+                  <!-- AQUÍ VA IMAGEN DEl COMIC WHERE TO BEGIN AGREGADO DESDE JQUERY-->
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Footer-->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--Script-->
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="modal.js"></script>
+</body>
+
+</html>

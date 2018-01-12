@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>modal test</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="modalStyle.css">
+</head>
+
+<body>
+
+  <!--MAQUETA DE COMO SE VERIA EL MODAL -->
+
+  <!-- Button trigger modal -->
+  <!-- ENLAZAR MODAL AL ELEMENTO QUE CORRESPONDE -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">
+  Launch demo modal
+</button>
+
+  <!-- Modal -->
+  <div class="modal fade bd-example-modal-lg" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <!-- Titulo Modal -->
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">MODAL TITLE</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        </div>
+        <!-- Contenido Modal -->
+        <div class="modal-body">
+          <div class="container-fluid">
+            <!-- Primera Row POSTER + TRAILER-->
+            <div class="row">
+              <!-- POSTER (4 columnas) -->
+              <div class="col-md-4">
+                <div class="">
+
+                  <!-- AQUÍ VA EL POSTER DE LA PELICULA AGREGADO DESDE JQUERY-->
+                  <div class="card">
+                    <!-- Agregando id="poster"para dar altura y ancho a la imagen en css -->
+                    <img id="poster" class="card-img-top" src="guardians-of-the-galaxy.jpg" alt="Card image cap">
+                  </div>
+
+                </div>
+              </div>
+              <!-- TRAILER (8 columnas) -->
+              <div class="col-md-8">
+                <div class="">
+
+                  <!-- AQUÍ VA EL TRAILER DE LA PELICULA AGREGADO DESDE JQUERY-->
+                  <div class="card">
+                    <!-- Agregando video trailer -->
+                    <iframe width="480" height="330" src="https://www.youtube.com/embed/d96cjJhvlMA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <!-- Fin Primera Row -->
+            <!-- Segunda Row INFORMACION-->
+            <div class="row">
+              <div class="col-md-12">
+                <div class="">
+
+                  <!-- AQUÍ VA INFORMACION DE LA PELICULA AGREGADO DESDE JQUERY-->
+                  <div class="card">
+                    <div class="card-block">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                      in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <!-- Fin Segunda Row -->
+            <!-- Tercera Row COMICS -->
+            <div class="row">
+              <!-- COMIC FIRST APPEARANCE (4 columnas) -->
+              <div class="col-md-4">
+                <div class="">
+
+                  <!-- AQUÍ VA IMAGENES DEL LOS COMIC FIRST APPEARANCE AGREGADO DESDE JQUERY-->
+                  <div class="card">
+                    <a href=""><img class="card-img-top comic" src="Annihilation_Conquest_Vol_1_6.jpg" alt="Card image cap"></a>
+                    <div class="card-block">
+                      <h6 class="card-title">First Appearance:</h6>
+                      <p class="card-text">Annihilation: Conquest #6</p>
+                      <p class="card-text"><small class="text-muted">Click on the image for more information</small></p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <!-- COMIC MOST POPULAR (4 columnas) -->
+              <div class="col-md-4">
+                <div class="">
+
+                  <!-- AQUÍ VA IMAGENES DEL COMIC MOST POPULAR AGREGADO DESDE JQUERY-->
+                  <div class="card">
+                    <a href=""><img class="card-img-top comic" src="Guardians_of_the_Galaxy_Vol_2_1_Legacy.jpg" alt="Card image cap"></a>
+                    <div class="card-block">
+                      <h6 class="card-title">Most Popular Comic:</h6>
+                      <p class="card-text">Guardians of the Galaxy, Volume 1: Legacy</p>
+                      <p class="card-text"><small class="text-muted">Click on the image for more information</small></p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <!-- COMIC WHERE TO BEGIN (4 columnas) -->
+              <div class="col-md-4">
+                <div class="">
+
+                  <!-- AQUÍ VA IMAGENES DEl COMIC WHERE TO BEGIN AGREGADO DESDE JQUERY-->
+                  <div class="card">
+                    <a href=""><img class="card-img-top comic" src="Guardians_of_the_Galaxy_Vol_2_1_Abnett_Lanning.jpg" alt="Card image cap"></a>
+                    <div class="card-block">
+                      <h6 class="card-title">Where To Begin:</h6>
+                      <p class="card-text">Guardians of the Galaxy by Abnett & Lanning</p>
+                      <p class="card-text"><small class="text-muted">Click on the image for more information</small></p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <!-- Fin Tercera Row -->
+          </div>
+        </div>
+        <!--Fin de sección contenido del modal-->
+        <!--Footer-->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--Script-->
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  <script src="https://use.fontawesome.com/61e76361dd.js"></script>
+  <script type="text/javascript" src="modal.js"></script>
+</body>
+
+</html>

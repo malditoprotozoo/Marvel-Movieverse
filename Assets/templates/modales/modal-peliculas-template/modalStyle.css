@@ -1,0 +1,15 @@
+/* ESTILOS MODAL INFORMACION PELICULAS*/
+
+#poster{
+  width: 14em;
+  height: auto;
+}
+
+.card{
+  margin-bottom: 1em;
+}
+
+.comic{
+  width: 14em;
+  height: auto;
+}
