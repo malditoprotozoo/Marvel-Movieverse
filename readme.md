@@ -2,7 +2,7 @@
 
 ![](https://i.imgur.com/ymPkyax.png)
 
-#### ¿Que es?
+#### ¿Qué es?
 
 Movieverse es una plataforma para fanaticos de Marvel que quieren encontrar en un solo lugar las peliculas de sus personajes favoritos y a la vez quieran adquirir los comics que estan relacionados con estos.
 
@@ -27,7 +27,7 @@ Para determinar cual era la necesidad para los usuarios que gustan del mundo Mar
 
 6. El usuario que esta empezando a explorar este mundo, no entiende la relación que existe entre personajes. 
 
-#### ¿Como lo planificamos?
+#### ¿Cómo lo planificamos?
 
 #####Una vez recopilada la información:
 
@@ -49,6 +49,6 @@ Para determinar cual era la necesidad para los usuarios que gustan del mundo Mar
 	- jQuery 3.2.1, libreria de JavaScript que permite agregar interactividad y efectos visuales al sitio web.
 5. Divimos las tareas que cada una iba a realizar.
 	- Andrea Diaz: Encargada de base de datos y funcionalidad.
-	- Carolina Jarpa: Encargada del desarrollo UX, diseño y maquetación
-	- Kesly Martinez: Encargada de la creación del repositorio, UX y funcionalidad 
-	- Victoria Rodríguez: Encargada de base de datos API y funcionalidad
+	- Carolina Jarpa: Encargada del desarrollo UX, diseño y maquetación.
+	- Kesly Martinez: Encargada de la creación del repositorio, UX y funcionalidad.
+	- Victoria Rodríguez: Encargada de base de datos API, funcionalidad y estilos.
