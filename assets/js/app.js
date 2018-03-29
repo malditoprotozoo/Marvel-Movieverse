@@ -21,7 +21,7 @@ var getInfo = (function(mainArr) {
     yearsArr.push(mainArr[i].year);
   }
   for (var n = 0; n < titlesArr.length; n++) {
-    var queryString = "https://www.omdbapi.com/?apikey=3a181f1c&t=" + titlesArr[n].replace(/ /g, "+") + "&y=" + yearsArr[n];
+    var queryString = "https://www.omdbapi.com/?apikey=444d5932&t=" + titlesArr[n].replace(/ /g, "+") + "&y=" + yearsArr[n];
     $.ajax({
       url: queryString,
       method: "GET"
